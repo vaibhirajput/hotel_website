@@ -1,0 +1,235 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+   
+}
+/* common css for header login and contact poppa box and footer for all pages  */
+/* header css */
+body{
+background-color: #e0e0e0;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rosybrown;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+
+
+}
+
+#loginbtn {
+    width: 65px;
+    height: 30px;
+    margin-right: 50px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+#loginbtn a {
+    text-decoration: none;
+    color: #000;
+}
+
+#logo {
+    height: 70px;
+    width: 70px;
+    margin-left: 25px;
+}
+
+
+/* login box */
+#loginbox {
+    width: 35vw;
+    height: 40vh;
+    position: absolute;
+    top: 32.5px;
+    left: 32.5vw;
+    right: 30vw;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+
+
+}
+
+#please-login {
+    margin: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cross {
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#frombox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+
+}
+
+.form {
+    margin: 2%;
+    display: flex;
+    width: 100%;
+    font-size: medium;
+    font-weight: bold;
+    justify-content: space-evenly;
+}
+
+.form input {
+    font-size: 1rem;
+    height: 4vh;
+    border-radius: 4px;
+}
+
+#loginboxbtn {
+    width: 5vw;
+    height: 5vh;
+    background-color: rgb(20, 169, 228);
+    border-radius: 3px;
+    border: none;
+    margin-top: 8px;
+}
+
+#loginboxbtn a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#loginboxdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/*footer  */
+#footer {
+    width: 100vw;
+    height: 8vh;
+    background-color: rosybrown;
+    /* position: fixed;
+    bottom: 0px;
+    left: 0px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#contentus {
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contactbtn {
+    width: 90px;
+    height: 29px;
+    background-color: rgb(9, 120, 163);
+    border: none;
+    border-radius: 3px;
+}
+
+#contactbtn a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#copyright {
+    font-size: 14px;
+}
+
+.s-img {
+    width: 20px;
+    height: 20px;
+}
+
+/* contact box */
+#contactusbox {
+    width: 35vw;
+    height: 40vh;
+    position: absolute;
+    top: 32.5px;
+    left: 32.5vw;
+    right: 30vw;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+}
+
+#get-touch {
+    margin: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#contactfrom {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-evenly;
+}
+
+.email {
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 2px;
+
+}
+
+.email p {
+    margin-top: 5px;
+}
+
+.email input {
+    font-size: 1rem;
+    height: 4vh;
+    border-radius: 4px;
+}
+
+#contactboxbtn {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+#contactsubmitbtn {
+    width: 5vw;
+    height: 5vh;
+    background-color: rgb(20, 169, 228);
+    border-radius: 3px;
+    border: none;
+    margin-top: 8px;
+}
+
+#contactsubmitbtn a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

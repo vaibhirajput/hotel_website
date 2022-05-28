@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#detailcontent {
+    width: 100vw;
+    height: auto;
+
+}
+
+#detailformbox {
+
+    width: 90vw;
+    height: 70vh;
+    margin: 10% auto 2% auto;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* slider box css */
+#detailboxslider {
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid black; */
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#containerslider {
+    width: 70%;
+    height: 90%;
+    overflow: hidden;
+    border: 2px solid;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+.arrow{
+font-size: 3rem;
+color: rgb(161, 161, 161);
+margin: 5%;
+cursor: pointer;
+
+}
+.arrow:hover{
+    color: rgb(87, 85, 85);
+
+}
+
+/* form box css*/
+#detailboxform {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+
+}
+
+.formaitam {
+    width: 80%;
+    height: 10%;
+    /* border: 1px solid rgb(0, 0, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+
+}
+
+.formaitam input {
+    width: 50%;
+    height: 65%;
+
+}
+
+#discriptionbox {
+    width: 100vw;
+    height: 50vh;
+    /* border: 1px solid black; */
+}
+
+#hoteldiscription {
+    margin-left: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40vh;
+    /* border: 2px solid black; */
+
+}
+
+.checked {
+    color: orange;
+    font-size: 1.5rem;
+}

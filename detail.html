@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <div id="header">
+        <img id="logo" src="assests/images/logo.png" alt="logo">
+        <button onclick="login()" id="loginbtn"><a href="#">LOGIN</a></button>
+    </div>
+
+    <!-- login box -->
+    <div id="loginbox">
+        <div id="please-login">
+            <h2>Please Login</h2>
+            <span onclick="login()" id="cross">&#9587</span>
+        </div>
+        <hr>
+        <form id="frombox" action="">
+            <div class="form">
+                <label for=""> Username :</label> <input type="text" value="" placeholder="Enter Username">
+            </div>
+            <div class="form">
+                <label for=""> Password :</label> <input type="password" value="" required placeholder="Enter Password">
+            </div>
+        </form>
+        <hr>
+        <div id="loginboxdiv">
+            <button id="loginboxbtn"><a href="#">Login</a></button>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div id="detailcontent">
+        <!-- slider and form -->
+
+        <div id="detailformbox">
+            
+
+            <div id="detailboxslider">
+                <span   id="previous" class="arrow" onclick="slidercontrolpre()" >   <  </span>
+                <div id="containerslider">
+                    <div class="slider">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="" class="sliderimage">
+                    </div>
+                    <div class="slider">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="" class="sliderimage">
+                    </div>
+                    <div class="slider">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="" class="sliderimage">
+                    </div>
+                </div>
+                <span  id="next" class="arrow" onclick="slidercontrolnext()">  > </span>
+
+            </div>
+
+
+            <div id="detailboxform">
+                <div class="formaitam">
+                    <label for="number">Adult :</label><input type="number" value="">
+                </div>
+                <div class="formaitam">
+                    <label for="text">Name :</label><input type="text" value="">
+                </div>
+                <div class="formaitam">
+                    <label for="date">From :</label><input type="date" value="">
+                </div>
+                <div class="formaitam">
+                    <label for="date">To date :</label><input type="date" value="">
+                </div>
+                <div class="formaitam">
+                    <label for="text">Total :</label><input type="text" value="">
+                </div>
+
+            </div>
+
+        </div>
+        <!-- detail discrpion -->
+
+        <div id="discriptionbox">
+            <div id="hoteldiscription">
+                <h1>Radisson Blu Hotel</h1>
+                <h3>RATING</h3>
+                <div class="stars">
+                    <span class="star checked">&#9733;</span>
+                    <span class="star checked">&#9733;</span>
+                    <span class="star checked">&#9733;</span>
+                    <span class="star checked">&#9733;</span>
+                    <span class="star checked">&#9733;</span>
+                </div>
+                <h2>AMENITIES</h2>
+                <ul>
+                    <li>Room Service</li>
+                    <li>Restaurants</li>
+                    <li>Business Center</li>
+                    <li>Fitness Center</li>
+                    <li>Pool</li>
+                </ul>
+                <h2>DESCRIPTION</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perspiciatis reprehenderit id saepe
+                    quia facere excepturi atque! Ex reiciendis quos et mollitia, totam rem nesciunt saepe similique
+                    temporibus, ipsum dignissimos.</p>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- footer -->
+    <div id="footer">
+        <div id="contentus">
+            <button onclick="contactus()" id="contactbtn"><a href="#">Contact Us</a></button>
+            <div id="copyright">
+                <p>2020 ROOM SEARCH PVT LTD</p>
+
+            </div>
+            <div id="socialicons">
+                <a href="#" class="s-icons"><img src="assests/images/facebook.png" alt="facebook.com" class="s-img"></a>
+                <a href="#" class="s-icons"><img src="assests/images/instagram.png" alt="instagram.com"
+                        class="s-img"></a>
+                <a href="#" class="s-icons"><img src="assests/images/twitter.png" alt="twitter.com" class="s-img"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- contact us  -->
+    <div id="contactusbox">
+        <div id="get-touch">
+            <h2>Get in touch</h2>
+            <span onclick="contactus()" id="cross">&#9587</span>
+        </div>
+        <hr>
+        <form id="contactfrom" action="">
+            <div class="email">
+                <p>Thank you for reaching out!!!</p>
+                <p>Please enter your email and we will back to you.</p>
+            </div>
+            <div class="email">
+                <label for=""> Email: </label> <input type="email" value="" placeholder="Enter your email id">
+            </div>
+
+        </form>
+        <hr>
+        <div id="contactboxbtn">
+            <button id="contactsubmitbtn"><a href="#">Submit</a></button>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/detail.js"></script>
+</body>
+
+</html>

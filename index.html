@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <img id="logo" src="assests/images/logo.png" alt="logo">
+        <button onclick="login()" id="loginbtn"><a href="#">LOGIN</a></button>
+    </div>
+
+    <!-- login box -->
+    <div id="loginbox">
+        <div id="please-login">
+            <h2>Please Login</h2>
+            <span onclick="login()" id="cross">&#9587</span>
+        </div>
+        <hr>
+        <form id="frombox" action="">
+            <div class="form">
+                <label for=""> Username :</label> <input type="text" value="" placeholder="Enter Username">
+            </div>
+            <div class="form">
+                <label for=""> Password :</label> <input type="password" value="" required placeholder="Enter Password">
+            </div>
+        </form>
+        <hr>
+        <div id="loginboxdiv">
+            <button id="loginboxbtn"><a href="#">Login</a></button>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div id="content">
+        <div id="searchdiv">
+            <input id="searchbox" type="text" placeholder="City">
+        </div>
+
+        <div id="slider">
+            <div class="box">
+                <a href="list.html">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="">
+                
+                <div class="city">
+                    <p>Delhi</p>
+                </div>
+            </a>
+            </div>
+            <div class="box">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg
+                " alt="">
+                <div class="city">
+                    <p>Goa</p>
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="">
+                <div class="city">
+                    <p>Hyderabad</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="">
+                <div class="city">
+                    <p>Kolkata</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-more">
+            <button id="viewbtn"> <a href="#"> View More</a></button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div id="contentus">
+            <button onclick="contactus()" id="contactbtn"><a href="#">Contact Us</a></button>
+            <div id="copyright">
+                <p>2020 ROOM SEARCH PVT LTD</p>
+
+            </div>
+            <div id="socialicons">
+                <a href="#" class="s-icons"><img src="assests/images/facebook.png" alt="facebook.com" class="s-img"></a>
+                <a href="#" class="s-icons"><img src="assests/images/instagram.png" alt="instagram.com"
+                        class="s-img"></a>
+                <a href="#" class="s-icons"><img src="assests/images/twitter.png" alt="twitter.com" class="s-img"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- contact us  -->
+    <div id="contactusbox">
+        <div id="get-touch">
+            <h2>Get in touch</h2>
+            <span onclick="contactus()" id="cross">&#9587</span>
+        </div>
+        <hr>
+        <form id="contactfrom" action="">
+            <div class="email">
+                <p>Thank you for reaching out!!!</p>
+                <p>Please enter your email and we will back to you.</p>
+            </div>
+            <div class="email">
+                <label for=""> Email: </label> <input type="email" value="" placeholder="Enter your email id">
+            </div>
+
+        </form>
+        <hr>
+        <div id="contactboxbtn">
+            <button id="contactsubmitbtn"><a href="#">Submit</a></button>
+        </div>
+
+    </div>
+    <script src="scripts/common.js"></script>
+
+</body>
+
+</html>
