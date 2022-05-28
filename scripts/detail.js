@@ -1,27 +1,33 @@
 let number = 0;
 
-let countnext =0;
-function slidercontrolnext(){
-countnext++;
-if(countnext <3){
+let countnext =1;
+function slidercontrolnext(){ 
+if(countnext<=2){
+    countnext++;
+}
+
+if(countnext <=2){
        sliderfunction(countnext);
-       console.log(countnext);
-       
+       console.log(countnext); 
    }
-if(countnext >=3){
-    countnext=3;
+if(countnext >=2){
+    countnext=2;
 }
 }
-let countpre =2;
 function slidercontrolpre(){
-    if(countpre >=0){
-           sliderfunction(countpre);
-           console.log(countpre);
-           countpre--;
+    if(countnext>=1){
+
+        countnext--;
+    }
+
+    if(countnext >=0){
+           sliderfunction(countnext);
+           console.log(countnext);
+           
        }
 
-       if(countpre <0){
-        countnext=0;
+       if(countpre <=1){
+        countnext=1;
     
     }
 }
