@@ -11,6 +11,10 @@
     width: 100vw;
     height: auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #searchdiv{
     width: 100vw;
@@ -20,6 +24,7 @@
     align-items: center;
     justify-content:center;
     overflow: hidden;
+    /* background-attachment: fixed; */
 }
 #searchbox{
     width: 25%;
@@ -32,15 +37,14 @@
 #slider{
     width: 90vw;
     height: 30vh; 
-    margin: 50px auto;
     /* border: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 .box{
-    width: 11.1vw;
-    height: auto;
+    width: 11vw;
+    height: 20vh;
     /* border: 2px solid black; */
     position: relative;
     overflow: hidden;
@@ -48,10 +52,10 @@
    
 }
 .box img{
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
-    box-shadow: 5px 5px 50px rgb(0, 0, 0);
+    /* box-shadow: 5px 5px 50px rgb(0, 0, 0); */
    
 }
 .city{

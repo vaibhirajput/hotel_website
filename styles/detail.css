@@ -2,17 +2,21 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    font-size: 62.5%;
+}
 
 #detailcontent {
     width: 100vw;
     height: auto;
+    
 
 }
 
 #detailformbox {
 
     width: 90vw;
-    height: 70vh;
+    height: 60vh;
     margin: 10% auto 2% auto;
     border: 2px solid black;
     display: flex;
@@ -26,8 +30,8 @@
 #detailboxslider {
     width: 60%;
     height: 100%;
-    /* border: 1px solid black; */
-    border-right: 1px solid black;
+    /* border: 10px solid rgb(160, 21, 21); */
+    border-right: 1px solid rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +39,7 @@
 }
 
 #containerslider {
-    width: 70%;
+    width: 60%;
     height: 90%;
     overflow: hidden;
     border: 2px solid;
@@ -84,6 +88,7 @@ cursor: pointer;
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
+    font-size: 1.6em;
 
 }
 
@@ -95,16 +100,19 @@ cursor: pointer;
 
 #discriptionbox {
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
+    
     /* border: 1px solid black; */
 }
 
 #hoteldiscription {
-    margin-left: 2.5%;
+    width: 90%;
+    margin-left: 3%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 40vh;
+    height: 90%;
+    font-size: 1.6em;
     /* border: 2px solid black; */
 
 }

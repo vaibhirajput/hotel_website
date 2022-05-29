@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+/* comtent of payment page */
+
+#paymentcontent{
+    width: 100vw;
+    height: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 60.5%; */
+
+}
+
+#selecthoteldiv {
+    width: 55vw;
+    height: auto;
+    /* border: 2px solid black; */
+    background-color: gray;
+    margin-top: 12%;
+    display: flex;
+    
+       
+}
+#hoteldetail{
+    width: 60%;
+   display: flex;
+   flex-direction: column;
+   /* align-items: center; */
+   /* border: 2px solid; */
+   padding-top: 7%;
+   padding-left: 3%;
+   box-sizing: border-box;
+
+}
+#hoteldetail p{
+font-size: 1rem;
+}
+#hoteldetail h1{
+    font-size: 2rem;
+    }
+#selecthoteldiv img {
+    width: 45%;
+    height: 100%;
+    /* border: 2px solid black; */
+   
+}
+
+#hotelpaymentdiv {
+    width: 90vw;
+    height: 30vh;
+    border: 2px solid rgba(0, 0, 0, 0.589);
+    margin: 2% 0% 4% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rosybrown;
+    border-radius: 5px;
+} 
+.clinetdetial{
+    font-weight: bold;
+}
+.clientpayment1{
+    width: 30%;
+    height: 88%;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.clientpayment2{
+    width: 30%;
+    height: 88%;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.clientpayment3{
+    width: 30%;
+    height: 88%;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#paynowbtn{
+    width: 22%;
+    height: 20%;
+    background-color: rgb(72, 173, 72);
+   border: 1px solid rgb(72, 173, 72);
+    border-radius: 3px;
+    color: white;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <img id="logo" src="assests/images/logo.png" alt="logo">
+        <button onclick="login()" id="loginbtn"><a href="#">LOGIN</a></button>
+    </div>
+
+    <!-- login box -->
+    <div id="loginbox">
+        <div id="please-login">
+            <h2>Please Login</h2>
+            <span onclick="login()" id="cross">&#9587</span>
+        </div>
+        <hr>
+        <form id="frombox" action="">
+            <div class="form">
+                <label for=""> Username :</label> <input type="text" value="" placeholder="Enter Username">
+            </div>
+            <div class="form">
+                <label for=""> Password :</label> <input type="password" value="" required placeholder="Enter Password">
+            </div>
+        </form>
+        <hr>
+        <div id="loginboxdiv">
+            <button id="loginboxbtn"><a href="#">Login</a></button>
+        </div>
+    </div>
+
+    <!-- content -->
+
+    <div id="paymentcontent">
+        <div id="selecthoteldiv">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
+            " alt="" >
+            <div id="hoteldetail">
+                <h1>Radisson Blu Hotel</h1>
+                <p>#38 of 1,289 hotels in New Delhi.</p>
+                <br>
+                <p>National Highway 8 New Delhi 110017 India</p>
+
+            </div>
+
+        </div>
+        
+        <div id="hotelpaymentdiv">
+
+            <div class="clientpayment1">
+                <p><span class="clinetdetial">Name : </span>John Deo</p>
+                <p><span class="clinetdetial">Number of Adult : </span>2</p>
+                <p><span class="clinetdetial">Check-in date : </span>04/06/2022</p>
+                <p><span class="clinetdetial">Check-outdate : </span>06/06/2022</p>
+
+            </div>
+            <div class="clientpayment2">
+                <p><span class="clinetdetial">Tariff Berakdown : </span>Rs 1000x2 Adults x5 Nights</p>
+                <p><span class="clinetdetial">Total Amount : </span>Rs 10000</p>
+                
+            </div>
+            <div class="clientpayment3">
+                <button id="paynowbtn">Pay Now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div id="contentus">
+            <button onclick="contactus()" id="contactbtn"><a href="#">Contact Us</a></button>
+            <div id="copyright">
+                <p>2020 ROOM SEARCH PVT LTD</p>
+
+            </div>
+            <div id="socialicons">
+                <a href="#" class="s-icons"><img src="assests/images/facebook.png" alt="facebook.com" class="s-img"></a>
+                <a href="#" class="s-icons"><img src="assests/images/instagram.png" alt="instagram.com"
+                        class="s-img"></a>
+                <a href="#" class="s-icons"><img src="assests/images/twitter.png" alt="twitter.com" class="s-img"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- contact us  -->
+    <div id="contactusbox">
+        <div id="get-touch">
+            <h2>Get in touch</h2>
+            <span onclick="contactus()" id="cross">&#9587</span>
+        </div>
+        <hr>
+        <form id="contactfrom" action="">
+            <div class="email">
+                <p>Thank you for reaching out!!!</p>
+                <p>Please enter your email and we will back to you.</p>
+            </div>
+            <div class="email">
+                <label for=""> Email: </label> <input type="email" value="" placeholder="Enter your email id">
+            </div>
+
+        </form>
+        <hr>
+        <div id="contactboxbtn">
+            <button id="contactsubmitbtn"><a href="#">Submit</a></button>
+        </div>
+
+    </div>
+    <script src="scripts/common.js"></script>
+</body>
+</html>

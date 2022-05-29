@@ -1,6 +1,7 @@
+// slider js start
 let number = 0;
 
-let countnext =1;
+let countnext =0;
 function slidercontrolnext(){ 
 if(countnext<=2){
     countnext++;
@@ -26,10 +27,6 @@ function slidercontrolpre(){
            
        }
 
-       if(countpre <=1){
-        countnext=1;
-    
-    }
 }
 
 
@@ -45,3 +42,4 @@ function sliderfunction(number1) {
     image[number1].style.display = "block";
 
 }
+// End of slider js
