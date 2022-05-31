@@ -17,7 +17,7 @@
     justify-content: center;
 }
 #searchdiv{
-    width: 100vw;
+    width: 100%;
     height: 61vh;
     background: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg) no-repeat center center/cover;
     display: flex;
@@ -27,8 +27,8 @@
     /* background-attachment: fixed; */
 }
 #searchbox{
-    width: 25%;
-    height: 8%;
+    min-width: 22%;
+    min-height: 35px;
     border-radius: 10px;
     border: none;
     font-size: medium;
@@ -41,10 +41,11 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 3%;
 }
 .box{
-    width: 11vw;
-    height: 20vh;
+    width: 150px;
+    height: 150px;
     /* border: 2px solid black; */
     position: relative;
     overflow: hidden;
@@ -55,6 +56,7 @@
     width: 100%;
     height: 100%;
     border-radius: 25px;
+    position: absolute;
     /* box-shadow: 5px 5px 50px rgb(0, 0, 0); */
    
 }
@@ -78,24 +80,114 @@
     opacity: 1;
 }
 #view-more{
-    width: 8vw;
-    margin: 50px auto;
+    width: 105px;
+    height: 30px;
+    margin-top: 2%;
+    margin-bottom: 15%;
     /* border: 2px solid black; */
 }
 #viewbtn{
-    width: 90px;
-    height: 32px;
+    width: 100%;
+    height: 100%;
     background-color: grey;
     border: none;
     font-weight: bold;
     border-radius: 3px;
+    font-size: 1rem;
 }
 #viewbtn a{
     text-decoration: none;
     color: white;
 }
 
+/* index page responsive css */
 
+
+@media screen and (max-width: 850px){
+    #slider {
+        width: 60vw;
+        height: 50vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: center;
+        column-gap: 20%;
+        row-gap: 5%;
+        margin-top: 5%;
+        z-index: -2;
+    } 
+
+    #view-more{
+        /* width: 20%;
+        height: 30px;
+        margin-top: 5%; */
+        margin-bottom: 20%;
+        /* border: 2px solid black; */
+    }
     
+
+
+}
+
+@media screen and (max-width: 645px){
+    #slider {
+        width: 58vw;
+        height: 50vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: center;
+        column-gap: 13%;
+        row-gap: 5%;
+        margin-top: 5%;
+    }
+
+    .box {
+        width: 130px;
+        height: 130px;
+        /* border: 2px solid black; */
+        position: relative;
+        overflow: hidden;
+        border-radius: 25px;
+    }
+    
+
+
+}
+
+@media screen and (max-width: 500px){
+
+    #slider {
+        width: 90vw;
+        height: auto;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1;
+    
+    }
+    .box{
+        width: 150px;
+        height: 150px;
+        margin-top: 7%;
+        /* border: 2px solid black; */
+        position: relative;
+        overflow: hidden;
+        border-radius: 25px;
+       
+    }
+    #view-more{
+        width: 20%;
+        height: 30px;
+        margin-top: 5%;
+        margin-bottom: 20%;
+        /* border: 2px solid black; */
+    }
+    
+    }
+
+
 
 
