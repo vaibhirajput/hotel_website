@@ -70,9 +70,15 @@
     align-items: center;
     box-sizing: border-box;
     overflow: hidden;
-
+    
 
 }
+#atag{
+    text-decoration: none;
+    overflow: hidden;
+    color: black;
+}
+
 
 .hotel {
     width: 60%;
