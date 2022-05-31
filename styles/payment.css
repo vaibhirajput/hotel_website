@@ -1,303 +1,287 @@
 * {
-    margin: 0px;
-    padding: 0px;
-
+  margin: 0px;
+  padding: 0px;
 }
-body{
-    background-color: #e0e0e0;
-    }
+body {
+  background-color: #e0e0e0;
+}
 
 /* comtent of payment page */
 
 #paymentcontent {
-    width: 100vw;
-    height: auto;
-    /* border: 2px solid black; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  height: auto;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #selecthoteldiv {
-    width: 55vw;
-    height: auto;
-    /* border: 2px solid black; */
-    background-color: gray;
-    margin-top: 12%;
-    display: flex;
-
-
+  width: 55vw;
+  height: auto;
+  /* border: 2px solid black; */
+  background-color: gray;
+  margin-top: 12%;
+  display: flex;
 }
 
 #hoteldetail {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    /* border: 2px solid; */
-    padding-top: 7%;
-    padding-left: 3%;
-    box-sizing: border-box;
-
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid; */
+  padding-top: 7%;
+  padding-left: 3%;
+  box-sizing: border-box;
 }
 
 #hoteldetail p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 #hoteldetail h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 #selecthoteldiv img {
-    width: 45%;
-    height: 100%;
-    /* border: 2px solid black; */
-
+  width: 45%;
+  height: 100%;
+  /* border: 2px solid black; */
 }
 
 #hotelpaymentdiv {
-    width: 90vw;
-    height: 205px;
-    border: 2px solid rgba(0, 0, 0, 0.589);
-    margin: 2% 0% 10% 0%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rosybrown;
-    border-radius: 5px;
+  width: 90vw;
+  height: 205px;
+  border: 2px solid rgba(0, 0, 0, 0.589);
+  margin: 2% 0% 10% 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rosybrown;
+  border-radius: 5px;
 }
 
 .clinetdetial {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .clientpayment1 {
-    width: 25%;
-    height: 80%;
-    /* border: 2px solid; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 25%;
+  height: 80%;
+  /* border: 2px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .clientpayment2 {
-    min-width: 35%;
-    min-height: 80%;
-    /* border: 2px solid; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 1rem;
+  min-width: 35%;
+  min-height: 80%;
+  /* border: 2px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1rem;
 }
 
 .clientpayment3 {
-    width: 17%;
-    height: 80%;
-    /* border: 2px solid; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 17%;
+  height: 80%;
+  /* border: 2px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #paynowbtn {
-    width: 40%;
-    height: 27px;
-    background-color: rgb(72, 173, 72);
-    border: 1px solid rgb(72, 173, 72);
-    border-radius: 3px;
-    color: white;
+  width: 40%;
+  height: 27px;
+  background-color: rgb(72, 173, 72);
+  border: 1px solid rgb(72, 173, 72);
+  border-radius: 3px;
+  color: white;
 }
 
 /* payment page responsive css */
 
 @media screen and (max-width: 1100px) {
-    .clientpayment1 {
-        font-size: 1.2rem;
-    }
+  .clientpayment1 {
+    font-size: 1.2rem;
+  }
 
-    .clientpayment2 {
-        font-size: 1.2rem;
-    }
+  .clientpayment2 {
+    font-size: 1.2rem;
+  }
 
-    .clientpayment3 {
-        font-size: 1rem;
-    }
+  .clientpayment3 {
+    font-size: 1rem;
+  }
 
-    #selecthoteldiv {
-        font-size: 1.5rem;
+  #selecthoteldiv {
+    font-size: 1.5rem;
+  }
 
-    }
+  #hoteldetail p {
+    font-size: 0.9rem;
+  }
 
-    #hoteldetail p {
-        font-size: 0.9rem;
-    }
-
-    #hoteldetail h1 {
-        font-size: 1.9rem;
-    }
-
+  #hoteldetail h1 {
+    font-size: 1.9rem;
+  }
 }
 
 @media screen and (max-width: 880px) {
-    .clientpayment1 {
-        font-size: 1rem;
-        height: 75%;
-    }
+  .clientpayment1 {
+    font-size: 1rem;
+    height: 75%;
+  }
 
-    .clientpayment2 {
-        font-size: 1rem;
-        height: 75%;
-    }
+  .clientpayment2 {
+    font-size: 1rem;
+    height: 75%;
+  }
 
-    .clientpayment3 {
-        font-size: .9rem;
-        height: 75%;
-    }
+  .clientpayment3 {
+    font-size: 0.9rem;
+    height: 75%;
+  }
 
-    #hoteldetail p {
-        font-size: 0.8rem;
-    }
+  #hoteldetail p {
+    font-size: 0.8rem;
+  }
 
-    #hoteldetail h1 {
-        font-size: 1.6rem;
-    }
+  #hoteldetail h1 {
+    font-size: 1.6rem;
+  }
 
-    #selecthoteldiv {
-        margin-top: 15%;
+  #selecthoteldiv {
+    margin-top: 15%;
+  }
 
+  #hotelpaymentdiv {
+    margin-bottom: 10%;
+  }
 
-    }
-
-    #hotelpaymentdiv {
-        margin-bottom: 10%;
-    }
-
-    #paynowbtn {
-        width: 45%;
-    }
-
+  #paynowbtn {
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 735px) {
-    .clientpayment1 {
-        font-size: 1.2rem;
-        height: 70%;
-    }
+  .clientpayment1 {
+    font-size: 1.2rem;
+    height: 70%;
+  }
 
-    .clientpayment2 {
-        font-size: 1.2rem;
-        height: 70%;
-    }
+  .clientpayment2 {
+    font-size: 1.2rem;
+    height: 70%;
+  }
 
-    .clientpayment3 {
-        font-size: .9rem;
-        height: 70%;
-    }
+  .clientpayment3 {
+    font-size: 0.9rem;
+    height: 70%;
+  }
 
-    #hoteldetail p {
-        font-size: 0.8rem;
-    }
+  #hoteldetail p {
+    font-size: 0.8rem;
+  }
 
-    #hoteldetail h1 {
-        font-size: 1.5rem;
-    }
+  #hoteldetail h1 {
+    font-size: 1.5rem;
+  }
 
-    #selecthoteldiv {
-        width: 68vw;
-        margin-top: 15%;
+  #selecthoteldiv {
+    width: 68vw;
+    margin-top: 15%;
+  }
 
+  #hotelpaymentdiv {
+    margin-bottom: 10%;
+  }
 
-    }
-
-    #hotelpaymentdiv {
-        margin-bottom: 10%;
-    }
-
-    #paynowbtn {
-        width: 47%;
-    }
-
+  #paynowbtn {
+    width: 47%;
+  }
 }
 
 @media screen and (max-width: 570px) {
-    #selecthoteldiv {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 20%;
-    }
+  #selecthoteldiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+  }
 
-    #selecthoteldiv img {
-        width: 82%;
-        height: 100%;
-    }
+  #selecthoteldiv img {
+    width: 82%;
+    height: 100%;
+  }
 
-    #hoteldetail {
-        width: 71%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        /* border: 2px solid; */
-        box-sizing: border-box;
+  #hoteldetail {
+    width: 71%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    /* border: 2px solid; */
+    box-sizing: border-box;
+  }
 
-    }
+  #hoteldetail p {
+    font-size: 1rem;
+  }
 
-    #hoteldetail p {
-        font-size: 1rem;
-    }
+  #hoteldetail h1 {
+    font-size: 1.8rem;
+  }
 
-    #hoteldetail h1 {
-        font-size: 1.8rem;
-    }
+  #hotelpaymentdiv {
+    width: 90vw;
+    height: auto;
+    border: 2px solid rgba(0, 0, 0, 0.589);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: right;
+    background-color: rosybrown;
+    border-radius: 5px;
+    padding-left: 2%;
+    box-sizing: border-box;
+  }
 
-    #hotelpaymentdiv {
-        width: 90vw;
-        height: auto;
-        border: 2px solid rgba(0, 0, 0, 0.589);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: right;
-        background-color: rosybrown;
-        border-radius: 5px;
-        padding-left: 2%;
-        box-sizing: border-box;
+  .clientpayment1 {
+    width: 62%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    }
+  .clientpayment2 {
+    min-width: 35%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 
-    .clientpayment1 {
-        width: 62%;
-        height: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  .clientpayment3 {
+    width: 21%;
+    height: 20px;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
 
-    .clientpayment2 {
-        min-width: 35%;
-        height: 60px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-
-    }
-
-    .clientpayment3 {
-        width: 21%;
-        height: 20px;
-        /* border: 2px solid; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #paynowbtn {
-        width: 45px
-    }
-
+  #paynowbtn {
+    width: 45px;
+  }
 }
