@@ -13,7 +13,7 @@
 #detailformbox {
 
     width: 90vw;
-    height: 60vh;
+    height: 70vh;
     margin: 10% auto 2% auto;
     border: 2px solid black;
     display: flex;
@@ -128,10 +128,12 @@
     color: green;
     font-weight: bold;
     border: 1px solid green;
+    overflow: hidden;
 }
 #bookbtn:hover{
     color: white;
     background-color: green;
+    overflow: hidden;
 }
 
 
@@ -371,7 +373,7 @@
     }
     #detailboxformdiv2{
         width: 93%;
-        height: 90%;
+        height: 95%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -379,10 +381,17 @@
         /* border: 1px solid rgb(73, 187, 21); */
     }
     #bookbtn{
-        width: 70px;
+        width: 60px;
         height: 25px;
         color: green;
         font-weight: bold;
         border: 1px solid green;
+        font-size: 0.7rem;
+        overflow: hidden;
+        margin-bottom: 8%;
+    }
+   
+    .formaitmbtn{
+        overflow: hidden;
     }
 }
