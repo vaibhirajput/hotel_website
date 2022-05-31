@@ -25,7 +25,7 @@ background-color: #e0e0e0;
     left: 0px;
     right: 0px;
     overflow: hidden;
-    /* z-index: 999; */
+    z-index: 999;
     
 
 
@@ -266,7 +266,7 @@ background-color: #e0e0e0;
 
     /* contact us box */
     #contactbtn{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     #contactusbox h2{
         font-size: 1.5rem;
@@ -286,11 +286,6 @@ background-color: #e0e0e0;
 
 
     }
-    
-  }
-   
-  @media screen and (max-width: 852px){
-
     #contactusbox {
         min-width: 50%;
         max-height: 40%;
@@ -310,6 +305,34 @@ background-color: #e0e0e0;
         top: 6%;
         left: 27%;
         right:27%;
+        background-color: white;
+        border-radius: 5px;
+        display: none;
+    }
+    
+  }
+   
+  @media screen and (max-width: 852px){
+
+    #contactusbox {
+        min-width: 60%;
+        max-height: 40%;
+        position: absolute;
+        top: 6%;
+        left: 20%;
+        right: 20%;
+        background-color: white;
+        border-radius: 5px;
+        display: none;
+    }
+
+    #loginbox {
+        min-width: 56%;
+        max-height: 46%;
+        position: absolute;
+        top: 6%;
+        left: 22%;
+        right:22%;
         background-color: white;
         border-radius: 5px;
         display: none;
@@ -338,7 +361,7 @@ background-color: #e0e0e0;
 
     /* contact us box */
      #contactbtn{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     #contactusbox h2{
         font-size: 1.5rem;
@@ -381,6 +404,15 @@ background-color: #e0e0e0;
         background-color: white;
         border-radius: 5px;
         display: none;
+    }
+
+    #logo {
+        height: 60px;
+        width: 60px;
+        margin-left: 23px;
+    }
+    #copyright {
+        font-size: 13px;
     }
   }
 
@@ -436,6 +468,9 @@ background-color: #e0e0e0;
             border-radius: 5px;
             display: none;
         
+    }
+    #copyright {
+        font-size: 12px;
     }
 
 

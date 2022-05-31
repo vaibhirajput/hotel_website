@@ -18,7 +18,9 @@
 
     <!-- header -->
     <div id="header">
-        <img id="logo" src="assests/images/logo.png" alt="logo">
+        <a href="index.html">
+            <img id="logo" src="assests/images/logo.png" alt="logo">
+        </a>
         <button onclick="login()" id="loginbtn"><a href="#">LOGIN</a></button>
     </div>
 
@@ -48,27 +50,33 @@
         <!-- slider and form -->
 
         <div id="detailformbox">
-            
+
 
             <div id="detailboxslider">
-                <span   id="previous" class="arrow" onclick="slidercontrolpre()" >   <  </span>
-                <div id="containerslider">
-                    <div class="slider">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="" class="sliderimage">
-                    </div>
-                    <div class="slider">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="" class="sliderimage">
-                    </div>
-                    <div class="slider">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="" class="sliderimage">
-                    </div>
-                </div>
-                <span  id="next" class="arrow" onclick="slidercontrolnext()">  > </span>
+                <span id="previous" class="arrow" onclick="slidercontrolpre()">
+                    < </span>
+                    <span id="next" class="arrow" onclick="slidercontrolnext()"> > </span>
+                        <div id="containerslider">
+                            <div class="slider">
+                                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                                    alt="" class="sliderimage">
+                            </div>
+                            <div class="slider">
+                                <img src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg" alt=""
+                                    class="sliderimage">
+                            </div>
+                            <div class="slider">
+                                <img src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg"
+                                    alt="" class="sliderimage">
+                            </div>
+                        </div>
+                        
 
             </div>
 
 
             <div id="detailboxform">
+                <div id="detailboxformdiv2">
                 <div class="formaitam">
                     <label for="number">Adult :</label><input type="number" value="">
                 </div>
@@ -84,6 +92,12 @@
                 <div class="formaitam">
                     <label for="text">Total :</label><input type="text" value="">
                 </div>
+                <div class="formaitmbtn">
+                    <a href="payment.html">
+                 <button id="bookbtn" >Book Now</button>
+                </a>
+                </div>
+            </div>
 
             </div>
 
@@ -102,7 +116,7 @@
                     <span class="star checked">&#9733;</span>
                 </div>
                 <h2>AMENITIES</h2>
-                <ul>
+                <ul id="dott">
                     <li>Room Service</li>
                     <li>Restaurants</li>
                     <li>Business Center</li>

@@ -72,7 +72,7 @@
     justify-content: center;
     font-weight: bold;
     color: white;
-
+     font-size: 1rem;
     overflow: hidden;
     opacity: 0;
 }
@@ -114,15 +114,14 @@
         column-gap: 20%;
         row-gap: 5%;
         margin-top: 5%;
-        z-index: -2;
     } 
 
     #view-more{
-        /* width: 20%;
-        height: 30px;
-        margin-top: 5%; */
         margin-bottom: 20%;
-        /* border: 2px solid black; */
+    
+    }
+    .city{
+        font-size: 1rem;
     }
     
 
@@ -150,6 +149,11 @@
         overflow: hidden;
         border-radius: 25px;
     }
+
+    .city{
+        font-size: 1.2rem;
+    }
+    
     
 
 
@@ -165,7 +169,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        z-index: -1;
+      
     
     }
     .box{
@@ -184,6 +188,9 @@
         margin-top: 5%;
         margin-bottom: 20%;
         /* border: 2px solid black; */
+    }
+    .city{
+        font-size: 1.3rem;
     }
     
     }
