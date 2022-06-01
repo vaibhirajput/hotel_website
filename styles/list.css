@@ -84,6 +84,7 @@
   height: 100%;
   padding: 3%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .rating:hover {
@@ -193,6 +194,7 @@
     height: 50%;
     padding: 3%;
     box-sizing: border-box;
+    overflow: hidden;
   }
   .grid-item {
     font-size: 3.2rem;
