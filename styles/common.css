@@ -60,6 +60,8 @@ body {
   border-radius: 5px;
   display: none;
   box-sizing: border-box;
+  z-index: 9999;
+  overflow: hidden;
 }
 
 #please-login {
@@ -178,6 +180,8 @@ body {
   background-color: white;
   border-radius: 5px;
   display: none;
+  z-index: 9999;
+  overflow: hidden;
 }
 
 #get-touch {
