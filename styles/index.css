@@ -43,6 +43,13 @@
   justify-content: space-evenly;
   margin-top: 3%;
 }
+#hide1{
+  width: auto;
+  height: auto;
+  /* border: 2px solid black; */
+  display: none;
+
+}
 
 /* seconde slider box */
 #slider1 {
@@ -53,7 +60,7 @@
   align-items: center;
   justify-content: space-evenly;
   margin-top: 3%;
-  display: none;
+  /* display: none; */
 }
 
 .box {
