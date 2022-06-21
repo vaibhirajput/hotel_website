@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-
+    
 
 </head>
 
@@ -52,30 +52,30 @@
         </div>
 
         <div id="slider">
-            <div  class="box" onclick="hotellist('agra')">
-                <a href="list.html">
+            <div  class="box" onclick="delhi()">
+                <a  href="list.html">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="">
 
-                    <div class="city">
-                        <p>Delhi</p>
+                    <div  class="city">
+                        <p id="goa" >Delhi</p>
                     </div>
                 </a>
             </div>
-            <div   onclick="hotellist('goa')" class="box" >
+            <div   class="box" id="g1">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg
                 " alt="">
                 <div class="city">
-                    <p>Goa</p>
+                    <p >Goa</p>
 
                 </div>
             </div>
-            <div class="box" onclick="hotellist('hyderabad')">
+            <div class="box" onclick="hyderabad()">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="">
                 <div class="city">
                     <p>Hyderabad</p>
                 </div>
             </div>
-            <div class="box" onclick="hotellist('kolkata')">
+            <div class="box">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="">
                 <div class="city">
                     <p>Kolkata</p>
@@ -85,7 +85,7 @@
         <div id="hide1">
 
         <div id="slider1" >
-            <div onclick="hotellist('chennai')" class="box">
+            <div class="box">
                 <a href="list.html">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" alt="">
 
@@ -94,7 +94,7 @@
                     </div>
                 </a>
             </div>
-            <div class="box" onclick="hotellist('agra')">
+            <div class="box" >
                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg
                 " alt="">
                 <div class="city">
@@ -102,13 +102,15 @@
 
                 </div>
             </div>
-            <div class="box" onclick="hotellist('jaipur')">
+            <div class="box" onclick="hotelplace('jaipur')" >
+                <a href="list.html">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg" alt="">
                 <div class="city">
                     <p>Jaipur</p>
                 </div>
+            </a>
             </div>
-            <div class="box" onclick="hotellist('bengaluru')">
+            <div class="box" >
                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg" alt="">
                 <div class="city">
                     <p>Bengaluru</p>
@@ -165,7 +167,8 @@
 
     </div>
     <script src="scripts/common.js"></script>
-    <script src="scripts/index.js"  ></script>
+    <script   src="scripts/index.js"  ></script>
+    
     
    
 

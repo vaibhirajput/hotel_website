@@ -1,5 +1,6 @@
 
 
+
 let lv = document.getElementById("listbtnview");
 let lm = document.getElementById("listbtnmap");
 let cont = document.getElementById("contentlist");
@@ -20,14 +21,20 @@ function listbtn2() {
   cont.style.display = "none";
   mapimage.style.display = "block";
 }
- console.log
 
-//   let loaction = `https://travel-advisor.p.rapidapi.com/locations/search?query=${city2}&limit=30&offset=0&units=km&location_id=1&currency=USD&sort=relevance&lang=en_Delhi`;    
+
+
+
+
+
+//   let city2 = hh;
+//   let locat = `https://travel-advisor.p.rapidapi.com/locations/search?query=${city2}&limit=30&offset=0&units=km&location_id=1&currency=USD&sort=relevance&lang=en_Delhi`;    
   
 
 
 
 // console.log("city" + city2);
+
 // const options = {
 //      method: 'GET',
 //      headers: {
@@ -37,7 +44,7 @@ function listbtn2() {
 // };
 
 
-// fetch(loaction, options)
+// fetch(locat, options)
 //      .then(response => response.json())
 //      .then((response)=>{
 //     let hotel = response.data;
@@ -72,7 +79,7 @@ function listbtn2() {
 //     </div>`
 
 //    })
-//     document.getElementById("contentlist").innerHTML = html;
+//   document.getElementById("contentlist").innerHTML = html;
 //   console.log(response.data)
 
 
@@ -81,8 +88,8 @@ function listbtn2() {
 
 // }).catch(err => console.error(err));
 
-
-
+let you = document.getElementById("contentlist").innerHTML;
+console.log(you);
 
 
 

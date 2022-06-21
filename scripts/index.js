@@ -1,5 +1,6 @@
 
 
+
 function hide(){
      let hide = document.getElementById("hide1");
      let less = document.getElementById("viewbtn");
@@ -21,78 +22,105 @@ function hide(){
     }
   
 }
-    
+ let gg = document.getElementById("g1");
+ gg.addEventListener( "click" , goa);
+   console.log(gg);
+
+   
 
 
 
-// list hotel js
-
-   function hotellist(city1){
-     var city2=" ";
-     city2 =  city1;
-     console.log(city2);
-     let loaction = `https://travel-advisor.p.rapidapi.com/locations/search?query=${city2}&limit=30&offset=0&units=km&location_id=1&currency=USD&sort=relevance&lang=en_Delhi`;    
-  console.log(loaction);
+ function hotelplace(hot){
+let city2 = hot;
 
 
+let locat = `https://travel-advisor.p.rapidapi.com/locations/search?query=${city2}&limit=30&offset=0&units=km&location_id=1&currency=USD&sort=relevance&lang=en_Delhi`;    
 
-console.log("city" + city2);
 const options = {
-     method: 'GET',
-     headers: {
-          'X-RapidAPI-Key': '87bba50f70mshfabbd820e4160ddp101ebejsnccbf1bb41df7',
-          'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
-     }
+  method: 'GET',
+  headers: {
+       'X-RapidAPI-Key': '87bba50f70mshfabbd820e4160ddp101ebejsnccbf1bb41df7',
+       'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
+  }
 };
 
 
-fetch(loaction, options)
-     .then(response => response.json())
-     .then((response)=>{
-    let hotel = response.data;
-    let html = "";
-   hotel.map((values)=>{
+fetch(locat, options)
+  .then(response => response.json())
+  .then((response)=>{
+   let hotel = response.data;
+   let html = "";
+  console.log(hotel);
 
-    let img1 = values.result_object.photo.images.medium.url;
-    let hotelname = values.result_object.name;
-    let hoteladress = values.result_object.address;
-    let hotelrating = values.result_object.rating;
-    // console.log(hoteladress);
-    // console.log(img1);
-    html += `
-    <div class="grid-item">   
-        <img src=${img1} alt=""
-            class="hotel">
-        <div class="rating">
-            <h2>${hotelname}</h2>
-            <div class="stars">
-               <span >${hotelrating}</span>
-                <span class="star checked">&#9733;</span>
-                <br>
-                <br>
-                <p>${hoteladress}</p>
-            </div>
+     hotel.map((values)=>{
+  
+      let img1 = values.result_object.photo.images.medium.url;
+      let hotelname = values.result_object.name;
+      let hoteladress = values.result_object.address;
+      let hotelrating = values.result_object.rating;
+       console.log(hoteladress);
+       console.log(img1);
+      html += `
+      <div class="grid-item">   
+          <img src=${img1} alt=""
+              class="hotel">
+          <div class="rating">
+              <h2>${hotelname}</h2>
+              <div class="stars">
+                 <span >${hotelrating}</span>
+                  <span class="star checked">&#9733;</span>
+                  
+                  
+                  <br>
+                  <br>
+                  <p>${hoteladress}</p>
+              </div>
+  
+          </div>
+      
+  
+      </div>`
+  
+     })
 
-        </div>
-    
+     location.href=html;
+     
+     document.getElementById("contentlist").innerHTML = html;
+    console.log(response.data)
+  
+  
+    })
 
-    </div>`
-
-   })
-  let cont = document.getElementById("contentlist");
-  cont.innerHTML = html;
-  console.log(response.data)
-
-
-
-
-
-}).catch(err => console.error(err));
-
-
-
-
+// }).catch(err => console.error(err));
 
 }
 
+ 
 
+
+
+
+// var one = " ";
+// let hh;
+// function delhi(){
+//   return  one = "delhi";
+  
+//   }
+
+//   function goa(){
+//     return  one = 'goa';
+    
+    
+//     }
+
+//   let hyderabad =  ()=>{
+//      one = "hyderabad"; 
+//     //  console.log( one);
+//         }
+// console.log(one);
+// //  hh = delhi();
+// //  hh = goa()
+// //  hh= hyderabad();
+//  console.log(hyderabad());
+
+// // export default hh;
