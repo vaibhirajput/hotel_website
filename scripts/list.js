@@ -23,29 +23,28 @@ function listbtn2() {
 }
 
 
-
+// hotel list api data fetching start from here!!!!
 
 var place = location.search;
 
-
+console.log(place);
   
-  let locat = `https://travel-advisor.p.rapidapi.com/locations/search?query=${place}&limit=30&offset=0&units=km&location_id=1&currency=USD&sort=relevance&lang=en_Delhi`;    
+  let locat = `https://travel-advisor.p.rapidapi.com/locations/search?query=${place }&limit=30&offset=0&units=km&location_id=1&currency=USD&sort=relevance&lang=en_US`;    
   
   const options = {
     method: 'GET',
     headers: {
-         'X-RapidAPI-Key': '87bba50f70mshfabbd820e4160ddp101ebejsnccbf1bb41df7',
-         'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
+      'X-RapidAPI-Key': '7952b7bcebmshed5ea97c717fafbp13473djsn4fa8c591ec44',
+      'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
     }
   };
   
-  
-  fetch(locat, options)
+  fetch(locat , options)
     .then(response => response.json())
     .then((response)=>{
      let hotel = response.data;
      
-    // console.log(hotel);
+    console.log(hotel);
       var html =" ";
        hotel.map((values)=>{
         
@@ -53,10 +52,12 @@ var place = location.search;
         let hotelname = values.result_object.name;
         let hoteladress = values.result_object.address;
         let hotelrating = values.result_object.rating;
+        let hotelid1 = values.result_object.location_id;
         //  console.log(hoteladress);
-        //  console.log(img1);
+         console.log(hotelid1);
         html += `
-        <div class="grid-item">   
+        <a id="atag" href="detail.html?${hotelid1}">
+        <div class="grid-item" >   
             <img src=${img1} alt=""
                 class="hotel">
             <div class="rating">
@@ -74,7 +75,9 @@ var place = location.search;
             </div>
         
     
-        </div>`
+        </div>
+        </a>
+        `
     
        })
   

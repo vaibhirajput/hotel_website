@@ -24,7 +24,11 @@ function contactus(){
 }
 
 
-
+let username1 = document.getElementById("username").value;
+let password1 = document.getElementById("passwordd").value;
+ 
+console.log(username1);
+console.log(password1);
  
   
 
