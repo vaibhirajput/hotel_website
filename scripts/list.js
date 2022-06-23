@@ -56,7 +56,7 @@ console.log(place);
         //  console.log(hoteladress);
          console.log(hotelid1);
         html += `
-        <a id="atag" href="detail.html?${hotelid1}">
+        <a id="atag" href="detail.html?location_id=${hotelid1}">
         <div class="grid-item" >   
             <img src=${img1} alt=""
                 class="hotel">
