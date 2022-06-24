@@ -23,4 +23,18 @@ function hide(){
     }
   
 }
+
+
+let citysearch = document.getElementById("searchbox");
+let citys = document.getElementById("searchbox").value;
+// console.log("?"+citys)
+citysearch.addEventListener('keypress', (e)=>{
+    if(e.key == "Enter"){
+     citys = document.getElementById("searchbox").value;
+     console.log(citys);
+     location.href= "list.html?"+citys;
+    citys = document.getElementById("searchbox").value=""
+    }
+   
+})
  

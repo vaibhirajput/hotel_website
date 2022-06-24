@@ -53,7 +53,7 @@ console.log(place);
         let hoteladress = values.result_object.address;
         let hotelrating = values.result_object.rating;
         let hotelid1 = values.result_object.location_id;
-        //  console.log(hoteladress);
+        //  console.log(hoteladress);s
          console.log(hotelid1);
         html += `
         <a id="atag" href="detail.html?location_id=${hotelid1}">
