@@ -35,7 +35,7 @@
   width: 70%;
   height: 90%;
   overflow: hidden;
-  border: 2px solid;
+  /* border: 2px solid; */
   position: relative;
 }
 
@@ -80,15 +80,32 @@
   width: 40%;
   height: 100%;
 }
+#detailfrom{
 
-#detailboxformdiv2 {
-  width: 93%;
-  height: 85%;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  overflow: hidden;
+}
+
+#detailboxformdiv2 {
+  width: 93%;
+  height: 85%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; */
   /* border: 1px solid rgb(187, 21, 21); */
+}
+.formaitmbtn{
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 2px solid black; */
 }
 
 .formaitam {
@@ -108,11 +125,12 @@
 
 #bookbtn {
   width: 80px;
-  height: 30px;
+  height: 35px;
   color: green;
   font-weight: bold;
   border: 1px solid green;
   overflow: hidden;
+  border-radius: 4px;
 }
 
 #bookbtn:hover {
@@ -121,9 +139,25 @@
   overflow: hidden;
 }
 
+#bookbtn2 {
+  width: 80px;
+  height: 35px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border: 1px solid rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+#bookbtn2:hover {
+  color: white;
+  background-color: rgb(125, 125, 125);
+  overflow: hidden;
+}
+
 #discriptionbox {
   width: 100vw;
-  height: 61vh;
+  height: auto;
   margin-bottom: 8%;
 
   /* border: 1px solid black; */
@@ -131,8 +165,9 @@
 
 #hoteldiscription {
   width: 90%;
-  height: 100%;
+  height: auto;
   margin-left: 3%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -143,6 +178,16 @@
 #dott {
   list-style: disc inside;
   padding-left: 1%;
+  font-weight: bold;
+  
+}
+#dott li{
+padding: 0.5%;
+}
+#discrip{
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .checked {

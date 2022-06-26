@@ -32,15 +32,15 @@
         <hr>
         <form id="frombox" action="">
             <div class="form">
-                <label for=""> Username :</label> <input type="text" value="" placeholder="Enter Username">
+                <label for=""> Username :</label> <input type="text" name="username" placeholder="Enter Username" id="username" required>
             </div>
             <div class="form">
-                <label for=""> Password :</label> <input type="password" value="" required placeholder="Enter Password">
+                <label for=""> Password :</label> <input id="passwordd" type="password" name="password" placeholder="Enter Password" required >
             </div>
         </form>
         <hr>
         <div id="loginboxdiv">
-            <button id="loginboxbtn"><a href="#">Login</a></button>
+            <button type="submit"  onclick="loginvalues()" id="loginboxbtn">Login</button>
         </div>
     </div>
 
@@ -63,7 +63,7 @@
         <div id="hotelpaymentdiv">
 
             <div class="clientpayment1">
-                <p><span class="clinetdetial">Name : </span>John Deo</p>
+                <p><span class="clinetdetial" id="paymentname">Name : </span>John Deo</p>
                 <p><span class="clinetdetial">Number of Adult : </span>2</p>
                 <p><span class="clinetdetial">Check-in date : </span>04/06/2022</p>
                 <p><span class="clinetdetial">Check-outdate : </span>06/06/2022</p>
@@ -123,6 +123,7 @@
 
     </div>
     <script src="scripts/common.js"></script>
+    <script src="scripts/payment.js"></script>
 </body>
 
 </html>

@@ -34,15 +34,15 @@
         <hr>
         <form id="frombox" action="">
             <div class="form">
-                <label for=""> Username :</label> <input type="text" value="" placeholder="Enter Username">
+                <label for=""> Username :</label> <input type="text" name="username" placeholder="Enter Username" id="username" required>
             </div>
             <div class="form">
-                <label for=""> Password :</label> <input type="password" value="" required placeholder="Enter Password">
+                <label for=""> Password :</label> <input id="passwordd" type="password" name="password" placeholder="Enter Password" required >
             </div>
         </form>
         <hr>
         <div id="loginboxdiv">
-            <button id="loginboxbtn"><a href="#">Login</a></button>
+            <button type="submit"  onclick="loginvalues()" id="loginboxbtn">Login</button>
         </div>
     </div>
 
@@ -58,18 +58,7 @@
                     < </span>
                         <span id="next" class="arrow" onclick="slidercontrolnext()"> > </span> 
                 <div id="containerslider">
-                    <!-- <div class="slider">
-                                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                                    alt="" class="sliderimage">
-                            </div>
-                            <div class="slider">
-                                <img src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg" alt=""
-                                    class="sliderimage">
-                            </div>
-                            <div class="slider">
-                                <img src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg"
-                                    alt="" class="sliderimage">
-                            </div>  -->
+                   <!-- slider images -->
                 </div>
 
 
@@ -78,26 +67,30 @@
 
             <div id="detailboxform">
                 <div id="detailboxformdiv2">
+                    <form id="detailfrom" action="payment.html">
                     <div class="formaitam">
-                        <label for="number">Adult :</label><input type="number" value="">
+                        <label for="number">Adult :</label><input type="number" name="addult" id="persons">
                     </div>
                     <div class="formaitam">
-                        <label for="text">Name :</label><input type="text" value="">
+                        <label for="text">Name :</label><input type="text" name="name"  id="clientname">
                     </div>
                     <div class="formaitam">
-                        <label for="date">From :</label><input type="date" value="">
+                        <label for="date">From :</label><input type="date" name="startdate" id="startdate" >
                     </div>
                     <div class="formaitam">
-                        <label for="date">To date :</label><input type="date" value="">
+                        <label for="date">To date :</label><input onclick=" endingdate()" type="date" name="enddate" id="enddate">
                     </div>
                     <div class="formaitam">
-                        <label for="text">Total :</label><input type="text" value="">
+                        <label for="text">Total :</label><input type="text" id="totalprice">
                     </div>
                     <div class="formaitmbtn">
-                        <a href="payment.html">
-                            <button id="bookbtn">Book Now</button>
-                        </a>
+                            <button type="submit" onclick="date()" id="bookbtn2">Calculate Price</button>
+                           
+                            <button type="submit" id="bookbtn">Book Now</button>
+                        
                     </div>
+                </form>
+                
                 </div>
 
             </div>
@@ -106,31 +99,7 @@
         <!-- detail discrpion -->
 
         <div id="discriptionbox">
-            <div id="hoteldiscription">
-                <h1>Radisson Blu Hotel</h1>
-                <h3>RATING</h3>
-                <div class="stars">
-                    <span class="star checked">&#9733;</span>
-                    <span class="star checked">&#9733;</span>
-                    <span class="star checked">&#9733;</span>
-                    <span class="star checked">&#9733;</span>
-                    <span class="star checked">&#9733;</span>
-                </div>
-                <h2>AMENITIES</h2>
-                <ul id="dott">
-                    <li>Room Service</li>
-                    <li>Restaurants</li>
-                    <li>Business Center</li>
-                    <li>Fitness Center</li>
-                    <li>Pool</li>
-                </ul>
-                <h2>DESCRIPTION</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perspiciatis reprehenderit id saepe
-                    quia facere excepturi atque! Ex reiciendis quos et mollitia, totam rem nesciunt saepe similique
-                    temporibus, ipsum dignissimos.</p>
-
-
-            </div>
+          <!-- discription -->
         </div>
 
     </div>
@@ -184,6 +153,7 @@
     <script src="scripts/common.js"></script>
     <script src="scripts/detail.js"></script>
     <!-- JavaScript Bundle with Popper -->
+    
    
 </body>
 

@@ -57,7 +57,7 @@ function loginvalues() {
 
         document.getElementById("username").value = "";
         document.getElementById("passwordd").value = "";
-        location.href = "index.html";
+        location.href = " ";
     }
     var usernamevalue = localStorage.getItem("usernameEnter");
     var passwordvalue = localStorage.getItem("passwordEnter");
