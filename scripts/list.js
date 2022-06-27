@@ -40,10 +40,6 @@ console.log(place);
   };
   
   fetch(locat , options)
-  window.addEventListener("load" , function(){
-    loader.style.display ="block";
-})
-
     .then(response => response.json())
     .then((response)=>{
      let hotel = response.data;

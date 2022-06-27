@@ -68,7 +68,7 @@ fetch(hoteldetail, options)
     let suites = hotelamenities[7].name;
     let bar_lounge = hotelamenities[12].name;
     let Kids_Activities = hotelamenities[13].name;
-whole website made by vaibhav rajput
+// whole website made by vaibhav rajput
     var hoteldetails = " ";
     hoteldetails = ` <div id="hoteldiscription">
              <h1>${hotelname}</h1>
