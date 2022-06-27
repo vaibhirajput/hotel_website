@@ -1,143 +1,143 @@
 // // select hotel api photo fetching!!!
 
-// var photoid = location.search;
-// let shardphotolink = `https://travel-advisor.p.rapidapi.com/photos/list${photoid}&currency=USD&limit=50&lang=en_US`;
-// console.log(photoid);
-// const options = {
-//   method: "GET",
-//   headers: {
-//     "X-RapidAPI-Key": "e7ae583bdfmsh41b446c1545fc40p1a2305jsn3674e5172405",
-//     "X-RapidAPI-Host": "travel-advisor.p.rapidapi.com",
-//   },
-// };
+var photoid = location.search;
+let shardphotolink = `https://travel-advisor.p.rapidapi.com/photos/list${photoid}&currency=USD&limit=50&lang=en_US`;
+console.log(photoid);
+const options = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "e7ae583bdfmsh41b446c1545fc40p1a2305jsn3674e5172405",
+    "X-RapidAPI-Host": "travel-advisor.p.rapidapi.com",
+  },
+};
 
-// fetch(shardphotolink, options)
-//   .then((response) => response.json())
-//   .then((response) => {
-//     var hotelphoto = response.data;
-//     console.log(hotelphoto);
+fetch(shardphotolink, options)
+  .then((response) => response.json())
+  .then((response) => {
+    var hotelphoto = response.data;
+    console.log(hotelphoto);
 
-//     var sliderhotelimg = " ";
-//     hotelphoto.map((values) => {
-//       let sharedhotel = values.images.large.url;
-//       sliderhotelimg += `
-//     <div class="slider" >
-//     <img src=${sharedhotel}
-//         alt="" class="sliderimage">
-//     </div> `;
-//     });
+    var sliderhotelimg = " ";
+    hotelphoto.map((values) => {
+      let sharedhotel = values.images.large.url;
+      sliderhotelimg += `
+    <div class="slider" >
+    <img src=${sharedhotel}
+        alt="" class="sliderimage">
+    </div> `;
+    });
 
-//     document.getElementById("containerslider").innerHTML = sliderhotelimg;
-//   })
+    document.getElementById("containerslider").innerHTML = sliderhotelimg;
+  })
 
-//   .catch((err) => console.error(err));
+  .catch((err) => console.error(err));
 
-// // detail fetching api
+// detail fetching api
 
-// let hoteldetail = `https://travel-advisor.p.rapidapi.com/attractions/get-details${photoid}&currency=USD&lang=en_US`;
+let hoteldetail = `https://travel-advisor.p.rapidapi.com/attractions/get-details${photoid}&currency=USD&lang=en_US`;
 
-// const options1 = {
-//   method: "GET",
-//   headers: {
-//     "X-RapidAPI-Key": "e7ae583bdfmsh41b446c1545fc40p1a2305jsn3674e5172405",
-//     "X-RapidAPI-Host": "travel-advisor.p.rapidapi.com",
-//   },
-// };
+const options1 = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "e7ae583bdfmsh41b446c1545fc40p1a2305jsn3674e5172405",
+    "X-RapidAPI-Host": "travel-advisor.p.rapidapi.com",
+  },
+};
 
-// fetch(hoteldetail, options)
-//   .then((response) => response.json())
-//   .then((response) => {
-//     console.log(response);
-//     let hotelamenities = response.amenities;
-//     let hotediscription = response.description;
-//     let hotelname = response.name;
-//     let hotelprice = response.price;
-//     let hotelrating = response.rating;
-//     console.log(hotelamenities);
-//     console.log(hotelname);
-//     console.log(hotelprice);
-//     console.log(hotelrating);
+fetch(hoteldetail, options)
+  .then((response) => response.json())
+  .then((response) => {
+    console.log(response);
+    let hotelamenities = response.amenities;
+    let hotediscription = response.description;
+    let hotelname = response.name;
+    let hotelprice = response.price;
+    let hotelrating = response.rating;
+    console.log(hotelamenities);
+    console.log(hotelname);
+    console.log(hotelprice);
+    console.log(hotelrating);
 
-//     let swimming_pool = hotelamenities[0].name;
-//     let free_parking = hotelamenities[1].name;
-//     let fitness_center = hotelamenities[2].name;
-//     let room_service = hotelamenities[3].name;
-//     let restaurant = hotelamenities[4].name;
-//     let business_services = hotelamenities[5].name;
-//     let high_speed_net = hotelamenities[6].name;
-//     let suites = hotelamenities[7].name;
-//     let bar_lounge = hotelamenities[12].name;
-//     let Kids_Activities = hotelamenities[13].name;
-// whole website made by vaibhav rajput
-//     var hoteldetails = " ";
-//     hoteldetails = ` <div id="hoteldiscription">
-//              <h1>${hotelname}</h1>
-//              <h3>RATING</h3>
-//              <div class="stars">
-//                  <span>${hotelrating}</span>
-//                  <span class="star checked">&#9733;</span>
+    let swimming_pool = hotelamenities[0].name;
+    let free_parking = hotelamenities[1].name;
+    let fitness_center = hotelamenities[2].name;
+    let room_service = hotelamenities[3].name;
+    let restaurant = hotelamenities[4].name;
+    let business_services = hotelamenities[5].name;
+    let high_speed_net = hotelamenities[6].name;
+    let suites = hotelamenities[7].name;
+    let bar_lounge = hotelamenities[12].name;
+    let Kids_Activities = hotelamenities[13].name;
+whole website made by vaibhav rajput
+    var hoteldetails = " ";
+    hoteldetails = ` <div id="hoteldiscription">
+             <h1>${hotelname}</h1>
+             <h3>RATING</h3>
+             <div class="stars">
+                 <span>${hotelrating}</span>
+                 <span class="star checked">&#9733;</span>
 
-//              </div>
-//              <br>
-//              <h2>AMENITIES</h2>
-//              <br>
-//              <ul id="dott">
-//                  <li>${swimming_pool}</li>
-//                  <li>${free_parking}</li>
-//                  <li>${fitness_center}</li>
-//                  <li>${room_service}</li>
-//                  <li>${restaurant}</li>
-//                  <li>${business_services}</li>
-//                  <li>${high_speed_net}</li>
-//                  <li>${suites}</li>
-//                  <li>${bar_lounge}</li>
-//                  <li>${Kids_Activities}</li>
-//              </ul>
-//              <br>
-//              <br>
-//              <h2>DESCRIPTION</h2>
-//              <p id="discrip">${hotediscription}</p>
+             </div>
+             <br>
+             <h2>AMENITIES</h2>
+             <br>
+             <ul id="dott">
+                 <li>${swimming_pool}</li>
+                 <li>${free_parking}</li>
+                 <li>${fitness_center}</li>
+                 <li>${room_service}</li>
+                 <li>${restaurant}</li>
+                 <li>${business_services}</li>
+                 <li>${high_speed_net}</li>
+                 <li>${suites}</li>
+                 <li>${bar_lounge}</li>
+                 <li>${Kids_Activities}</li>
+             </ul>
+             <br>
+             <br>
+             <h2>DESCRIPTION</h2>
+             <p id="discrip">${hotediscription}</p>
 
-//          </div>`;
+         </div>`;
 
-//     document.getElementById("discriptionbox").innerHTML = hoteldetails;
-//   })
-//   .catch((err) => console.error(err));
+    document.getElementById("discriptionbox").innerHTML = hoteldetails;
+  })
+  .catch((err) => console.error(err));
 
-// //    slider old function!!!
+//    slider old function!!!
 
-// var countnext = 0;
+var countnext = 0;
 
-// function slidercontrolnext() {
-//   if (countnext <= 49) {
-//     var image = document.getElementsByClassName("slider");
-//     for (let y of image) {
-//       y.style.display = "none";
-//     }
-//     countnext++;
-//     image[countnext].style.display = "block";
-//     // console.log(countnext);
-//   }
-//   if (countnext >= 49) {
-//     countnext = -1;
-//   }
-// }
-// setInterval(slidercontrolnext, 5000);
+function slidercontrolnext() {
+  if (countnext <= 49) {
+    var image = document.getElementsByClassName("slider");
+    for (let y of image) {
+      y.style.display = "none";
+    }
+    countnext++;
+    image[countnext].style.display = "block";
+    // console.log(countnext);
+  }
+  if (countnext >= 49) {
+    countnext = -1;
+  }
+}
+setInterval(slidercontrolnext, 5000);
 
-// function slidercontrolpre() {
-//   if (countnext >= 1) {
-//     var image = document.getElementsByClassName("slider");
-//     for (let y of image) {
-//       y.style.display = "none";
-//     }
-//     countnext--;
-//     image[countnext].style.display = "block";
-//   }
+function slidercontrolpre() {
+  if (countnext >= 1) {
+    var image = document.getElementsByClassName("slider");
+    for (let y of image) {
+      y.style.display = "none";
+    }
+    countnext--;
+    image[countnext].style.display = "block";
+  }
 
-//   if (countnext <= 0) {
-//     countnext = 0;
-//   }
-// }
+  if (countnext <= 0) {
+    countnext = 0;
+  }
+}
 
 // disable past date from date picker!!!
 var dates = new Date();

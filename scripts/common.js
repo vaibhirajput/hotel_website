@@ -1,4 +1,13 @@
-// login function 
+var loader = document.getElementById("loader");
+
+window.addEventListener("load" , function(){
+    loader.style.display ="none";
+})
+
+
+
+
+// login function
 let loginn = document.getElementById("loginbox");
 let logout = document.getElementById("loginbtn");
 var count =0;
